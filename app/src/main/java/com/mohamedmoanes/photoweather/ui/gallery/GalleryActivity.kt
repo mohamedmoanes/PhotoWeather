@@ -1,9 +1,9 @@
 package com.mohamedmoanes.photoweather.ui.gallery
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.mohamedmoanes.photoweather.R
 import com.mohamedmoanes.photoweather.ui.ImageViewerActivity

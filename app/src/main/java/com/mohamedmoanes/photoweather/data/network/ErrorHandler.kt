@@ -7,7 +7,8 @@ import com.mohamedmoanes.photoweather.ui.base.ResultListener
 import org.json.JSONObject
 import retrofit2.HttpException
 import java.io.IOException
-const val TAG ="NetWork"
+
+const val TAG = "NetWork"
 private fun responseErrorHandler(response: String, responsecode: Int): String {
     val context = PhotoWeatherApplication.appContext.applicationContext
     return when {
@@ -37,7 +38,7 @@ private fun failureHandler(t: Throwable): String {
     return if (t is IOException) {
         context.getString(R.string.no_internet)
     } else {
-       Log.e(TAG,t.message)
+        Log.e(TAG, t.message)
         context.getString(R.string.error)
     }
 }
@@ -49,6 +50,6 @@ fun errorHandler(throwable: Throwable, resultListener: ResultListener<*>) {
             resultListener.onFailure(responseErrorHandler(response, throwable.code()))
         } else resultListener.onFailure(failureHandler(throwable))
     } catch (e: Exception) {
-        Log.e(TAG,e.message)
+        Log.e(TAG, e.message)
     }
 }

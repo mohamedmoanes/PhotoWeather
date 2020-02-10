@@ -2,12 +2,12 @@ package com.mohamedmoanes.photoweather.ui
 
 import android.content.Intent
 import android.media.MediaScannerConnection
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.MimeTypeMap
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.mohamedmoanes.photoweather.R
-import com.mohamedmoanes.photoweather.utils.loadFile
+import com.mohamedmoanes.photoweather.utils.extensions.loadFile
 import kotlinx.android.synthetic.main.activity_image_viewer.*
 import java.io.File
 

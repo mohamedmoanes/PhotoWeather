@@ -8,8 +8,8 @@ import java.io.FileOutputStream
 import java.io.IOException
 
 class FilesRepo {
-    fun getThumbnailFile(directory:File): Single<File> {
-      return  Single.create<File> { emitter ->
+    fun getThumbnailFile(directory: File): Single<File> {
+        return Single.create<File> { emitter ->
             directory.listFiles()?.toMutableList()?.max()?.let {
                 emitter.onSuccess(it)
             } ?: kotlin.run {
@@ -17,8 +17,9 @@ class FilesRepo {
             }
         }
     }
-    fun getGalleryFiles(directory:File):Single<MutableList<File>>{
-        return  Single.create<MutableList<File>> { emitter ->
+
+    fun getGalleryFiles(directory: File): Single<MutableList<File>> {
+        return Single.create<MutableList<File>> { emitter ->
             directory.listFiles()?.toMutableList()?.let {
                 emitter.onSuccess(it)
             } ?: kotlin.run {

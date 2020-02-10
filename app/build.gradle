@@ -74,13 +74,13 @@ private static void camera(configuration) {
     configuration.implementation "androidx.camera:camera-core:$camerax_version"
 
     // CameraX Camera2 extensions
-    configuration. implementation "androidx.camera:camera-camera2:$camerax_version"
+    configuration.implementation "androidx.camera:camera-camera2:$camerax_version"
 
     // CameraX Lifecycle library
-    configuration. implementation "androidx.camera:camera-lifecycle:1.0.0-alpha03"
+    configuration.implementation "androidx.camera:camera-lifecycle:1.0.0-alpha03"
 
     // CameraX View class
-    configuration. implementation "androidx.camera:camera-view:1.0.0-alpha06"
+    configuration.implementation "androidx.camera:camera-view:1.0.0-alpha06"
 }
 
 private static void retrofit(configuration) {

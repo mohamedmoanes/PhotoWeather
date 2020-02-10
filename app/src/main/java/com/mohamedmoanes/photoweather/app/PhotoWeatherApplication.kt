@@ -15,6 +15,7 @@ class PhotoWeatherApplication : Application(), CameraXConfig.Provider {
         appContext = applicationContext
 
     }
+
     override fun getCameraXConfig(): CameraXConfig {
         return Camera2Config.defaultConfig()
     }

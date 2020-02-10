@@ -8,16 +8,11 @@ import android.content.IntentSender.SendIntentException
 import android.content.pm.PackageManager
 import android.os.Looper
 import androidx.core.app.ActivityCompat
-import com.google.android.gms.location.LocationRequest
-import com.google.android.gms.location.LocationServices
-import com.google.android.gms.location.LocationSettingsRequest
-import com.google.android.gms.location.LocationSettingsResponse
-import com.google.android.gms.tasks.Task
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.common.api.ResolvableApiException
-import com.google.android.gms.location.LocationCallback
+import com.google.android.gms.location.*
 import com.google.android.gms.location.LocationServices.getFusedLocationProviderClient
-import com.google.android.gms.location.LocationSettingsStatusCodes
+import com.google.android.gms.tasks.Task
 
 fun getLocation(context: Context, locationCallback: LocationCallback) {
     if (ActivityCompat.checkSelfPermission(

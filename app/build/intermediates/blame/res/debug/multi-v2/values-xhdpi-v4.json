@@ -1,19 +1,19 @@
 {
-    "logs": [
+  "logs": [
+    {
+      "outputFile": "/home/moanes/Documents/PhotoWeather/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml",
+      "map": [
         {
-            "outputFile": "/home/moanes/Documents/PhotoWeather/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml",
-            "map": [
-                {
-                    "source": "/home/moanes/Documents/PhotoWeather/app/src/main/res/values-xhdpi/dimens.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "43",
-                        "endOffsets": "94"
-                    }
-                }
-            ]
+          "source": "/home/moanes/Documents/PhotoWeather/app/src/main/res/values-xhdpi/dimens.xml",
+          "from": {
+            "startLines": "2",
+            "startColumns": "4",
+            "startOffsets": "55",
+            "endColumns": "43",
+            "endOffsets": "94"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }

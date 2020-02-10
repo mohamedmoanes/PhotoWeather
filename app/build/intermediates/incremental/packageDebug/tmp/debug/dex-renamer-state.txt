@@ -1,4 +1,4 @@
-#Mon Feb 10 11:18:00 EET 2020
+#Mon Feb 10 11:45:04 EET 2020
 base.0=/home/moanes/Documents/PhotoWeather/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

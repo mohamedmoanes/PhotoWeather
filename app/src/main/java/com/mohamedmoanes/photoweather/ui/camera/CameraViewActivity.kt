@@ -14,10 +14,10 @@ import com.google.common.util.concurrent.ListenableFuture
 import com.mohamedmoanes.photoweather.R
 import com.mohamedmoanes.photoweather.ui.gallery.GalleryActivity
 import com.mohamedmoanes.photoweather.utils.createFile
+import com.mohamedmoanes.photoweather.utils.extensions.loadFile
 import com.mohamedmoanes.photoweather.utils.getRootDirectory
-import com.mohamedmoanes.photoweather.utils.loadFile
 import kotlinx.android.synthetic.main.activity_camera.*
-import java.io.*
+import java.io.File
 import java.util.concurrent.Executors
 
 class CameraViewActivity : AppCompatActivity(), CameraView {
@@ -30,8 +30,6 @@ class CameraViewActivity : AppCompatActivity(), CameraView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_camera)
-
-//        presenter.getWeatherData(this)
 
         initCameraPreview()
 
@@ -96,8 +94,8 @@ class CameraViewActivity : AppCompatActivity(), CameraView {
             object : ImageCapture.OnImageSavedCallback {
                 override fun onImageSaved(file: File) {
                     thumbnail.loadFile(file)
-                    runOnUiThread{
-                        presenter.addLabel(this@CameraViewActivity,file)
+                    runOnUiThread {
+                        presenter.addLabel(this@CameraViewActivity, file)
                     }
 
                 }
@@ -113,9 +111,6 @@ class CameraViewActivity : AppCompatActivity(), CameraView {
                 }
             })
     }
-
-
-
 
 
     override fun setWeatherText(s: String) {

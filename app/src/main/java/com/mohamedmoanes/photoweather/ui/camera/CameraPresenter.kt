@@ -6,10 +6,10 @@ import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationResult
 import com.mohamedmoanes.photoweather.data.model.weather.WeatherModel
 import com.mohamedmoanes.photoweather.data.repositories.FilesRepo
-import com.mohamedmoanes.photoweather.ui.base.ResultListener
 import com.mohamedmoanes.photoweather.data.repositories.WeatherRepo
 import com.mohamedmoanes.photoweather.ui.base.BasePresenter
-import com.mohamedmoanes.photoweather.utils.addLabel
+import com.mohamedmoanes.photoweather.ui.base.ResultListener
+import com.mohamedmoanes.photoweather.utils.extensions.addLabel
 import com.mohamedmoanes.photoweather.utils.getLocation
 import com.mohamedmoanes.photoweather.utils.kelvinToCelsius
 import com.mohamedmoanes.photoweather.utils.removeLocationListener
@@ -61,6 +61,7 @@ class CameraPresenter(val cameraView: CameraView) : BasePresenter() {
                     bitmap = bitmap.addLabel(label)
                     filesRepo.saveLabel(bitmap, file)
                 }
+
                 override fun onFailure(message: String) {
                     cameraView.onError(message)
                 }

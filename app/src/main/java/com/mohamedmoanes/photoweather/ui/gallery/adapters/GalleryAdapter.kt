@@ -6,16 +6,23 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.mohamedmoanes.photoweather.R
-import com.mohamedmoanes.photoweather.utils.loadFile
+import com.mohamedmoanes.photoweather.utils.extensions.loadFile
 import java.io.File
 
-class GalleryAdapter(private val list: List<File>, val open: (filePath: String) -> Unit):RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
+class GalleryAdapter(private val list: List<File>, val open: (filePath: String) -> Unit) :
+    RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.image_item, parent, false))
+        return ViewHolder(
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.image_item,
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount(): Int {
-    return list.size
+        return list.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -25,7 +32,7 @@ class GalleryAdapter(private val list: List<File>, val open: (filePath: String) 
         }
     }
 
-    class ViewHolder(view: View):RecyclerView.ViewHolder(view) {
-        val imageView:AppCompatImageView= view.findViewById(R.id.image)
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val imageView: AppCompatImageView = view.findViewById(R.id.image)
     }
 }

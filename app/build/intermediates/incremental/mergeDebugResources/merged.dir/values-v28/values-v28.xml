@@ -8,8 +8,8 @@
     <item format="float" name="mtrl_low_ripple_focused_alpha" type="dimen">0.20</item>
     <item format="float" name="mtrl_low_ripple_hovered_alpha" type="dimen">0.20</item>
     <item format="float" name="mtrl_low_ripple_pressed_alpha" type="dimen">0.12</item>
-    <style name="Base.Theme.AppCompat" parent="Base.V28.Theme.AppCompat"/>
-    <style name="Base.Theme.AppCompat.Light" parent="Base.V28.Theme.AppCompat.Light"/>
+    <style name="Base.Theme.AppCompat" parent="Base.V28.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="Base.V28.Theme.AppCompat.Light" />
     <style name="Base.V28.Theme.AppCompat" parent="Base.V26.Theme.AppCompat">
         <!-- We can use the platform styles on API 28+ -->
         <item name="dialogCornerRadius">?android:attr/dialogCornerRadius</item>

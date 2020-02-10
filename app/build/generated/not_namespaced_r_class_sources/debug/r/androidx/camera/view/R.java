@@ -7,10 +7,12 @@
 package androidx.camera.view;
 
 public final class R {
-    private R() {}
+    private R() {
+    }
 
     public static final class attr {
-        private attr() {}
+        private attr() {
+        }
 
         public static final int captureMode = 0x7f03006d;
         public static final int flash = 0x7f030127;
@@ -19,8 +21,10 @@ public final class R {
         public static final int pinchToZoomEnabled = 0x7f0301f7;
         public static final int scaleType = 0x7f03020a;
     }
+
     public static final class id {
-        private id() {}
+        private id() {
+        }
 
         public static final int auto = 0x7f080045;
         public static final int back = 0x7f080046;
@@ -36,16 +40,18 @@ public final class R {
         public static final int textureView = 0x7f080121;
         public static final int video = 0x7f080135;
     }
-    public static final class styleable {
-        private styleable() {}
 
-        public static final int[] CameraView = { 0x7f03006d, 0x7f030127, 0x7f0301b2, 0x7f0301f7, 0x7f03020a };
+    public static final class styleable {
+        private styleable() {
+        }
+
+        public static final int[] CameraView = {0x7f03006d, 0x7f030127, 0x7f0301b2, 0x7f0301f7, 0x7f03020a};
         public static final int CameraView_captureMode = 0;
         public static final int CameraView_flash = 1;
         public static final int CameraView_lensFacing = 2;
         public static final int CameraView_pinchToZoomEnabled = 3;
         public static final int CameraView_scaleType = 4;
-        public static final int[] PreviewView = { 0x7f030153 };
+        public static final int[] PreviewView = {0x7f030153};
         public static final int PreviewView_implementationMode = 0;
     }
 }

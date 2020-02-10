@@ -1,4 +1,4 @@
-package com.mohamedmoanes.photoweather.utils
+package com.mohamedmoanes.photoweather.utils.extensions
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide

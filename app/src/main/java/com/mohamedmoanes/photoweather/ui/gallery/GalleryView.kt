@@ -4,5 +4,5 @@ import java.io.File
 
 interface GalleryView {
     fun setGalleryItems(items: MutableList<File>)
-    fun onError(msg:String)
+    fun onError(msg: String)
 }

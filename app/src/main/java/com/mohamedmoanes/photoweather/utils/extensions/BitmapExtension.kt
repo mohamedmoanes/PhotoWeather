@@ -1,8 +1,12 @@
-package com.mohamedmoanes.photoweather.utils
+package com.mohamedmoanes.photoweather.utils.extensions
 
-import android.graphics.*
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
 import com.mohamedmoanes.photoweather.R
 import com.mohamedmoanes.photoweather.app.PhotoWeatherApplication
+import com.mohamedmoanes.photoweather.utils.getTextBackgroundSize
 
 fun Bitmap.addLabel(weatherString: String): Bitmap {
 
@@ -22,7 +26,12 @@ fun Bitmap.addLabel(weatherString: String): Bitmap {
     val bgPaint = Paint(Paint.FILTER_BITMAP_FLAG)
     bgPaint.color = Color.RED
 
-    val background = getTextBackgroundSize(x, y, weatherString, textPaint)
+    val background = getTextBackgroundSize(
+        x,
+        y,
+        weatherString,
+        textPaint
+    )
     canvas.drawRect(background, bgPaint)
 
     canvas.drawText(weatherString, x, y, textPaint)

@@ -3,7 +3,7 @@
     package="com.mohamedmoanes.photoweather"
     android:targetSandboxVersion="2"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -28,10 +28,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true" >
-        <activity android:name="com.mohamedmoanes.photoweather.ui.SplashActivity" >
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.mohamedmoanes.photoweather.ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

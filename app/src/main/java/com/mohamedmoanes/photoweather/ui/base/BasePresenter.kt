@@ -19,7 +19,7 @@ open class BasePresenter {
         return disposable
     }
 
-   open fun clear() {
+    open fun clear() {
         disposables.dispose()
     }
 }
