@@ -7,7 +7,6 @@ import androidx.camera.core.CameraXConfig
 import com.facebook.stetho.Stetho
 import com.mohamedmoanes.photoweather.BuildConfig
 
-//fixme name application to CameraApplication
 class PhotoWeatherApplication : Application(), CameraXConfig.Provider {
     companion object {
         lateinit var appContext: Context
