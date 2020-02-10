@@ -1,6 +1,5 @@
 package com.mohamedmoanes.photoweather.data.network
 
-import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.mohamedmoanes.photoweather.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -19,7 +18,6 @@ object RetrofitClient {
 
         val client = OkHttpClient.Builder()
             .addInterceptor(interceptor)
-            .addNetworkInterceptor(StethoInterceptor())
             .build()
 
         val baseUrl = BuildConfig.BASE_URL

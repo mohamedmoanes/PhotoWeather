@@ -14,18 +14,8 @@ private fun responseErrorHandler(response: String, responsecode: Int): String {
         responsecode < 500 -> {
             try {
                 val responseObject = JSONObject(response)
-                if (responseObject.has("data")) {
-                    return responseObject.getString("data")
-                }
-                if (responseObject.has("errors")) {
-                    val dataObject = responseObject.getJSONObject("errors")
-                    if (dataObject.has("email"))
-                        return dataObject.getJSONArray("email").getString(0)
-                }
                 responseObject.getString("message")
             } catch (e: Exception) {
-                Log.e(TAG,e.message)
-
                 if (null != e.message)
                     e.message!!
                 else

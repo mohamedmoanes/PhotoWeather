@@ -92,7 +92,6 @@ private static void retrofit(configuration) {
     configuration.implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
     configuration.implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     configuration.debugImplementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
-    configuration.debugImplementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
 }
 
 private static void rxJava(configuration) {

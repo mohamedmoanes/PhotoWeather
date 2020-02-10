@@ -4,10 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.camera.camera2.Camera2Config
 import androidx.camera.core.CameraXConfig
-import com.facebook.stetho.Stetho
-import com.mohamedmoanes.photoweather.BuildConfig
 
-//fixme name application to CameraApplication
 class PhotoWeatherApplication : Application(), CameraXConfig.Provider {
     companion object {
         lateinit var appContext: Context
@@ -16,10 +13,6 @@ class PhotoWeatherApplication : Application(), CameraXConfig.Provider {
     override fun onCreate() {
         super.onCreate()
         appContext = applicationContext
-
-        //fixme remove this
-        if (BuildConfig.DEBUG)
-            Stetho.initializeWithDefaults(this)
 
     }
     override fun getCameraXConfig(): CameraXConfig {

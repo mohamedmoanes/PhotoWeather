@@ -39,8 +39,6 @@ class CameraPresenter(val cameraView: CameraView) : BasePresenter() {
                 override fun onLocationResult(locationResult: LocationResult) {
                     val latitude: Double = locationResult.lastLocation.latitude
                     val longitude: Double = locationResult.lastLocation.longitude
-                    // do work here
-
                     getWeatherFromLocation(latitude, longitude, file)
                     removeLocationListener(context, this)
 
