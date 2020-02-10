@@ -1,18 +1,11 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\moham\\Documents\\PhotoWeather\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+            "outputFile": "/home/moanes/Documents/PhotoWeather/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\moham\\Documents\\PhotoWeather\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
+                    "source": "/home/moanes/Documents/PhotoWeather/app/src/main/res/values-xxhdpi/dimens.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "43",
-                        "endOffsets": "96"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

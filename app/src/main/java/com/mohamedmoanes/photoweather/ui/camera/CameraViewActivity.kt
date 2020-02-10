@@ -13,12 +13,11 @@ import androidx.lifecycle.LifecycleOwner
 import com.google.common.util.concurrent.ListenableFuture
 import com.mohamedmoanes.photoweather.R
 import com.mohamedmoanes.photoweather.ui.gallery.GalleryActivity
+import com.mohamedmoanes.photoweather.utils.createFile
 import com.mohamedmoanes.photoweather.utils.getRootDirectory
-import com.mohamedmoanes.photoweather.utils.loadImageFromFile
+import com.mohamedmoanes.photoweather.utils.loadFile
 import kotlinx.android.synthetic.main.activity_camera.*
 import java.io.*
-import java.text.SimpleDateFormat
-import java.util.*
 import java.util.concurrent.Executors
 
 class CameraViewActivity : AppCompatActivity(), CameraView {
@@ -96,7 +95,7 @@ class CameraViewActivity : AppCompatActivity(), CameraView {
             executor,
             object : ImageCapture.OnImageSavedCallback {
                 override fun onImageSaved(file: File) {
-                    loadImageFromFile(file, thumbnail)
+                    thumbnail.loadFile(file)
                     runOnUiThread{
                         presenter.addLabel(this@CameraViewActivity,file)
                     }
@@ -116,15 +115,7 @@ class CameraViewActivity : AppCompatActivity(), CameraView {
     }
 
 
-    private fun createFile(
-        baseFolder: File,
-        format: String = "yyyy-MM-dd-HH:mm:ss",
-        extension: String = ".JPEG"
-    ) =
-        File(
-            baseFolder, SimpleDateFormat(format, Locale.US)
-                .format(System.currentTimeMillis()) + extension
-        )
+
 
 
     override fun setWeatherText(s: String) {
@@ -133,7 +124,7 @@ class CameraViewActivity : AppCompatActivity(), CameraView {
     }
 
     override fun setThumbnail(file: File) {
-        loadImageFromFile(file, thumbnail)
+        thumbnail.loadFile(file)
     }
 
     override fun onError(msg: String) {

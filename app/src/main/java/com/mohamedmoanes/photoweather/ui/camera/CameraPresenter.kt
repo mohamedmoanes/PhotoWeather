@@ -11,6 +11,7 @@ import com.mohamedmoanes.photoweather.data.repositories.WeatherRepo
 import com.mohamedmoanes.photoweather.ui.base.BasePresenter
 import com.mohamedmoanes.photoweather.utils.addLabel
 import com.mohamedmoanes.photoweather.utils.getLocation
+import com.mohamedmoanes.photoweather.utils.kelvinToCelsius
 import com.mohamedmoanes.photoweather.utils.removeLocationListener
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -60,20 +61,11 @@ class CameraPresenter(val cameraView: CameraView) : BasePresenter() {
                     bitmap = bitmap.addLabel(label)
                     filesRepo.saveLabel(bitmap, file)
                 }
-
-                override fun onError(message: String) {
-                    cameraView.onError(message)
-                }
-
                 override fun onFailure(message: String) {
                     cameraView.onError(message)
                 }
             })
 
-    }
-
-    private fun kelvinToCelsius(k: Double): Float {
-        return (k - 273.15).toFloat()
     }
 
     fun addLabel(context: Context, file: File) {

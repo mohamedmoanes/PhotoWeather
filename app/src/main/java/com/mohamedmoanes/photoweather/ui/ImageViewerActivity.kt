@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.webkit.MimeTypeMap
 import androidx.appcompat.app.AlertDialog
 import com.mohamedmoanes.photoweather.R
-import com.mohamedmoanes.photoweather.utils.loadImageFromFile
+import com.mohamedmoanes.photoweather.utils.loadFile
 import kotlinx.android.synthetic.main.activity_image_viewer.*
 import java.io.File
 
@@ -20,8 +20,7 @@ class ImageViewerActivity : AppCompatActivity() {
         if (null != path) {
             val imageFile = File(path)
 
-            loadImageFromFile(imageFile, image_view)
-
+            image_view.loadFile(imageFile)
 
             initDelete(imageFile)
 

@@ -46,7 +46,7 @@ fun errorHandler(throwable: Throwable, resultListener: ResultListener<*>) {
     try {
         if (throwable is HttpException) {
             val response = throwable.response()!!.errorBody()!!.string()
-            resultListener.onError(responseErrorHandler(response, throwable.code()))
+            resultListener.onFailure(responseErrorHandler(response, throwable.code()))
         } else resultListener.onFailure(failureHandler(throwable))
     } catch (e: Exception) {
         Log.e(TAG,e.message)

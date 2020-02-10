@@ -6,97 +6,97 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml
+8-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml
+9-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:5:22-64
+11-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:6:5-80
-12-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:6:22-77
+12-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:6:5-80
+12-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:7:5-81
-13-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:7:22-78
+13-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:7:5-81
+13-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:7:22-78
 14    <uses-permission android:name="android.permission.CAMERA" />
-14-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:8:5-65
-14-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:8:22-62
+14-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:8:5-65
+14-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:8:22-62
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:9:5-79
-15-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:9:22-76
+15-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:9:5-79
+15-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:9:22-76
 16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-16-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:10:5-81
-16-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:10:22-78
+16-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:10:5-81
+16-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:10:22-78
 17
 18    <uses-feature android:name="android.hardware.camera" />
-18-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:12:5-60
-18-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:12:19-57
+18-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:12:5-60
+18-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:12:19-57
 19
 20    <!-- fixme remove warnings -->
 21    <application
-21-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:14:5-36:19
+21-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:14:5-36:19
 22        android:name="com.mohamedmoanes.photoweather.app.PhotoWeatherApplication"
-22-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:15:9-52
+22-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:15:9-52
 23        android:allowBackup="true"
-23-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:16:9-35
+23-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:16:9-35
 24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.1.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\df2ac4fe6b88cbdd1c862077d2fdf1ec\core-1.1.0\AndroidManifest.xml:24:18-86
+24-->[androidx.core:core:1.1.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/df2ac4fe6b88cbdd1c862077d2fdf1ec/core-1.1.0/AndroidManifest.xml:24:18-86
 25        android:debuggable="true"
 26        android:icon="@mipmap/ic_launcher"
-26-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:17:9-43
+26-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:17:9-43
 27        android:label="@string/app_name"
-27-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:18:9-41
+27-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:18:9-41
 28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:19:9-54
+28-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:19:9-54
 29        android:supportsRtl="true"
-29-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:20:9-35
+29-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:20:9-35
 30        android:testOnly="true"
 31        android:theme="@style/AppTheme"
-31-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:21:9-40
+31-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:21:9-40
 32        android:usesCleartextTraffic="true" >
-32-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:22:9-44
+32-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:22:9-44
 33        <activity android:name="com.mohamedmoanes.photoweather.ui.SplashActivity" >
-33-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:23:9-29:20
-33-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:23:19-52
+33-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:23:9-29:20
+33-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:23:19-52
 34            <intent-filter>
-34-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:24:13-28:29
+34-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:24:13-28:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:25:17-69
-35-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:25:25-66
+35-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:25:17-69
+35-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:25:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:27:17-77
-37-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:27:27-74
+37-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:27:17-77
+37-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:27:27-74
 38            </intent-filter>
 39        </activity>
 40        <activity android:name="com.mohamedmoanes.photoweather.ui.ImageViewerActivity" />
-40-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:30:9-60
-40-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:30:19-57
+40-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:30:9-60
+40-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:30:19-57
 41        <activity android:name="com.mohamedmoanes.photoweather.ui.gallery.GalleryActivity" />
-41-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:31:9-64
-41-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:31:19-61
+41-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:31:9-64
+41-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:31:19-61
 42        <activity
-42-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:32:9-34:48
+42-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:32:9-34:48
 43            android:name="com.mohamedmoanes.photoweather.ui.camera.CameraViewActivity"
-43-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:33:13-57
+43-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:33:13-57
 44            android:label="@string/app_name" />
-44-->C:\Users\moham\Documents\PhotoWeather\app\src\main\AndroidManifest.xml:34:13-45
+44-->/home/moanes/Documents/PhotoWeather/app/src/main/AndroidManifest.xml:34:13-45
 45        <activity
-45-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\bc16083ed528e87b42564933ce53a5d1\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+45-->[com.google.android.gms:play-services-base:17.0.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/bc16083ed528e87b42564933ce53a5d1/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
 46            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-46-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\bc16083ed528e87b42564933ce53a5d1\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+46-->[com.google.android.gms:play-services-base:17.0.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/bc16083ed528e87b42564933ce53a5d1/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
 47            android:exported="false"
-47-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\bc16083ed528e87b42564933ce53a5d1\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+47-->[com.google.android.gms:play-services-base:17.0.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/bc16083ed528e87b42564933ce53a5d1/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
 48            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-48-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\bc16083ed528e87b42564933ce53a5d1\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+48-->[com.google.android.gms:play-services-base:17.0.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/bc16083ed528e87b42564933ce53a5d1/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
 49
 50        <meta-data
-50-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\6dc46316c5c2bb545bf125d2d89d53eb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+50-->[com.google.android.gms:play-services-basement:17.0.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/695b7993c7781fb6d2a1fe1b2a711892/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 51            android:name="com.google.android.gms.version"
-51-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\6dc46316c5c2bb545bf125d2d89d53eb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+51-->[com.google.android.gms:play-services-basement:17.0.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/695b7993c7781fb6d2a1fe1b2a711892/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 52            android:value="@integer/google_play_services_version" />
-52-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\moham\.gradle\caches\transforms-2\files-2.1\6dc46316c5c2bb545bf125d2d89d53eb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+52-->[com.google.android.gms:play-services-basement:17.0.0] /home/moanes/.gradle/caches/transforms-2/files-2.1/695b7993c7781fb6d2a1fe1b2a711892/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 53    </application>
 54
 55</manifest>
